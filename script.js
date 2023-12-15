@@ -3,7 +3,7 @@ function shakeMagic8Ball() {
     if (question === null) {
         document.getElementById('response-text').innerText = 'Please ask a question!'
         document.getElementById('response-text').classList = 'text-danger'
-        document.getElementById('response-image').src = '#BADIMAGE' //Fix later
+        document.getElementById('response-image').src = 'images/Anger.jpg' //Fix later
     }
     
     if (!question.trim()) {
@@ -16,37 +16,37 @@ function shakeMagic8Ball() {
     switch (randomNumber) {
         case 0:
             answer = 'Yes'
-            image = 'yes-image.jpg' //change ts
+            image = 'images/Yes.jpg' //change ts
             color = 'text-success'
             break
         case 1:
             answer = 'No'
-            image = 'no-image.jpg' //change ts
+            image = 'images/no.png' //change ts
             color = 'text-danger'
             break
         case 3:
             answer = 'Maybe'
-            image = 'no-image.jpg' //change ts
+            image = 'images/maybe.jpeg' //change ts
             color = 'text-secondary'
             break
         case 4:
             answer = 'Most likely'
-            image = 'yes-image.jpg' //change ts
+            image = 'images/most likely.jpg' //change ts
             color = 'text-warning'
             break
         case 5:
             answer = 'Possibly'
-            image = 'no-image.jpg' //change ts
+            image = 'images/possibly.webp' //change ts
             color = 'text-muted'
             break
         case 6:
-            answer = "Let's go"
-            image = 'no-image.jpg' //change ts
+            answer = "Ask something else"
+            image = 'images/smthelse.webp' //change ts
             color = 'text-primary'
             break
         case 7:
-            answer = 'Keep going'
-            image = 'no-image.jpg' //change ts
+            answer = 'I dont know'
+            image = 'images/idk.jpg' //change ts
             color = 'text-info'
             break
         default:
