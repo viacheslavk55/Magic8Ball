@@ -27,7 +27,7 @@ function shakeMagic8Ball() {
         case 3:
             answer = 'Maybe'
             image = 'images/maybe.jpeg' //change ts
-            color = 'text-secondary'
+            color = 'text-warning'
             break
         case 4:
             answer = 'Most likely'
@@ -50,6 +50,7 @@ function shakeMagic8Ball() {
             color = 'text-info'
             break
         default:
+            answer = 'Respin'
             break
     }
 
